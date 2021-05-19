@@ -17,7 +17,7 @@ public class Counter {
 	public static Map<String, Integer> count(ArrayList<String> list ) 
 			throws IOException 
 	{ 
-		/** stocke les symptomes avec leur numéro */
+		/** stocke les symptomes avec leur valeurs numériques */
 
 		Map<String, Integer> counter = new HashMap<String, Integer>();
 
