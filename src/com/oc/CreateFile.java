@@ -16,7 +16,7 @@ public class CreateFile {
 
 	
 
-	public static void write(Map<String, Integer> SymptomsMap) throws IOException {
+	public void write(Map<String, Integer> SymptomsMap) throws IOException {
 		
 		  /** créer nouveau fichier  result.out */
 		

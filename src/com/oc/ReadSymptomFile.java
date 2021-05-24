@@ -10,7 +10,7 @@ import java.util.ArrayList;
 /**Permet de lire le fichier Symptoms et de stocker son contenu*/
 
 public class ReadSymptomFile {
-	public static ArrayList<String> read(String document)
+	public ArrayList<String> read(String document)
 			throws IOException {
 		ArrayList<String> listSymptoms = new ArrayList<String>();
 

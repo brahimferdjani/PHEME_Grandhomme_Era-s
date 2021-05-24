@@ -14,7 +14,7 @@ import java.util.Map;
 public class Counter {
 
 
-	public static Map<String, Integer> count(ArrayList<String> list ) 
+	public Map<String, Integer> count(ArrayList<String> list ) 
 			throws IOException 
 	{ 
 		/** stocke les symptomes avec leur valeurs numériques */

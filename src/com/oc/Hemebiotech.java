@@ -14,13 +14,16 @@ public class Hemebiotech {
 		
 		
 	    /**CLASS ReadSymptomFile : lire le fichier et le mettre dans une liste*/
-		ArrayList<String> listSymptoms = ReadSymptomFile.read(file);
+		ReadSymptomFile readsymptomfile = new ReadSymptomFile();
+		ArrayList<String> listSymptoms = readsymptomfile.read(file);
 	        
 	    /**CLASS Counter : comptez le nombre de chaque symptôme et trie dans l'ordre alphabétique */
-	    Map<String, Integer> counter = Counter.count(listSymptoms); 
+		Counter counter = new Counter();
+	    Map<String, Integer> counterResult = counter.count(listSymptoms); 
 	        
 	    /**CLASS CreateFile :Générez un nouveau fichier, y stocker le contenu de la Map et trier son contenu par ordre alphabétique */
-	    CreateFile.write(counter);  
+	    CreateFile createfile = new CreateFile();
+	    createfile.write(counterResult);  
 	        
 	        
 	       
